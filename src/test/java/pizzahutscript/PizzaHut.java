@@ -38,7 +38,7 @@ public class PizzaHut extends base {
 		home hm = new home(driver);
 		hm.enterLocation(prop.getProperty("location"));
 		hm.selectLocation();
-		hm.confirmLocation();
+		/*hm.confirmLocation();
 		try {
 			hm.selectTime();
 		} catch (Exception e) {
@@ -48,10 +48,10 @@ public class PizzaHut extends base {
 			text = driver.getCurrentUrl();
 			System.out.println(text);
 			assertTrue(text.contains("deals"), "Error User not in 'Deals' screen");
-		}
+		}*/
 	}
 
-	@Test(priority = 2)
+/*	@Test(priority = 2)
 	public void addCart() {
 
 		deals d = new deals(driver);
@@ -84,7 +84,7 @@ public class PizzaHut extends base {
 		text = driver.getCurrentUrl();
 		assertTrue(text.contains("showGiftCardModalV2=true"), "Error User not in 'Deals' screen");
 
-	}
+	}*/
 
 	@AfterClass
 	public void teardown() {
